@@ -1,0 +1,70 @@
+name : "Bug Report"
+description : "Report an error you're encountering with Mops Bot."
+labels : [ bug ]
+body :
+  - type : markdown
+    attributes :
+      value : |
+        Thank you for reporting an issue to us!
+  - type : dropdown
+    id : repo_choice
+    attributes :
+      label : "Repository"
+      description : "Which repository is this bug in?"
+      options :
+        - Mops-Bot
+        - Mops-Bot-API
+        - Mops-API-Wrapper
+        - Mops-Bot-Site
+    validations :
+      required : true
+  - type : dropdown
+    id : bug_type
+    attributes :
+      label : "Bug type"
+      description : "If this is a bug in Mops-Bot (Discord Bot), which type of bug is it?"
+      options :
+        - Slash Commands
+        - Commands
+        - Events
+    validations :
+      required : false
+
+  - type : textarea
+    id : describe-bug
+    attributes :
+      label : Description of the bug?
+      description : A clear and concise description of what bug you experienced.
+      placeholder : What happened?
+    validations :
+      required : true
+  - type : textarea
+    id : steps-to-reproduce
+    attributes :
+      label : Steps to reproduce
+      description : What steps did you take to reproduce the bug?
+      placeholder : I clicked on ... then I went to ...
+    validations :
+      required : true
+  - type : textarea
+    id : expected-result
+    attributes :
+      label : Expected result
+      description : What was the expected result of the bug?
+      placeholder : I should see a picture of a cute cat.
+    validations :
+      required : true
+
+  - type : textarea
+    id : additional-info
+    attributes :
+      label : Additional information
+      description : Any additional information you'd like to provide?
+      placeholder : I'm using Docker on Arch Linux
+
+  - type : textarea
+    id : logs
+    attributes :
+      label : Relevant log output
+      description : Please copy and paste any relevant log output. This will be automatically formatted into code.
+      render : shell
