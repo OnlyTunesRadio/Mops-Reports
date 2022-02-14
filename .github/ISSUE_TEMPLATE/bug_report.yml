@@ -34,24 +34,8 @@ body :
     id : describe-bug
     attributes :
       label : Description of the bug?
-      description : A clear and concise description of what bug you experienced.
-      placeholder : What happened?
-    validations :
-      required : true
-  - type : textarea
-    id : steps-to-reproduce
-    attributes :
-      label : Steps to reproduce
-      description : What steps did you take to reproduce the bug?
-      placeholder : I clicked on ... then I went to ...
-    validations :
-      required : true
-  - type : textarea
-    id : expected-result
-    attributes :
-      label : Expected result
-      description : What was the expected result of the bug?
-      placeholder : I should see a picture of a cute cat.
+      description : Describe the bug in as much detail as possible by including the steps to reproduce it and the expected behavior.
+      placeholder : I can't see the daily cat picture. I went to the cat picture page and clicked on the daily picture. I'm still not seeing the picture.
     validations :
       required : true
 
