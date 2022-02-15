@@ -27,6 +27,7 @@ body :
         - Slash Commands
         - Commands
         - Events
+        - Other
     validations :
       required : false
 
