@@ -10,7 +10,7 @@ body :
     id : repo_choice
     attributes :
       label : "Repository"
-      description : "Which repository does the feature apply to"
+      description : "Which repository does the task apply to"
       options :
         - Mops-Bot
         - Mops-Bot-API
