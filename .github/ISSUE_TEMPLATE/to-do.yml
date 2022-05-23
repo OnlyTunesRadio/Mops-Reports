@@ -1,0 +1,30 @@
+name : "In Progress"
+description : "To-do stuff"
+labels : [ to-do ]
+body :
+  - type : markdown
+    attributes :
+      value : |
+        Stuff to work on
+  - type : dropdown
+    id : repo_choice
+    attributes :
+      label : "Repository"
+      description : "Which repository does the feature apply to"
+      options :
+        - Mops-Bot
+        - Mops-Bot-API
+        - Mops-API-Wrapper
+        - Mops-Bot-Site
+        - Mops-Img-API
+    validations :
+      required : true
+
+  - type : textarea
+    id : describe-task
+    attributes :
+      label : Task Description
+      description : Describe the task
+      placeholder : Adding a /cat command
+    validations :
+      required : true
